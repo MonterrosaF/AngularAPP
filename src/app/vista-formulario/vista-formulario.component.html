@@ -1,0 +1,16 @@
+
+<h1>Visor Formulario</h1>
+
+<table id='infoData'>
+  <tr>
+    <th *ngFor="let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor="let row of rows">
+    <td *ngFor="let column of headers">
+      {{row[column]}}
+    </td>
+  </tr>
+</table>
